@@ -6,5 +6,6 @@ Says chat messages on using windows TTS
 3. Node index.js
 
 Enjoy
+``Run Npm install & after That Do Node index```
 
 
