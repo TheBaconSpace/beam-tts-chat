@@ -4,7 +4,7 @@ var BeamSocket = require('beam-client-node/lib/ws');
 var winsay = require('./node-winsay/winsay');
 var ent = require('ent');
 
-var channel = "ProbablePrime";
+var channel = "Beam-Username";
 var beam = new Beam();
 var socket;
 
@@ -56,8 +56,8 @@ function flattenBeamMessage(message) {
 }
 
 beam.use('password', {
-    username: 'ProbablePrime',
-    password: ''
+    username: 'Beam-Username',
+    password: 'Beam-Password'
 }).attempt().then(function (res) {
     userID = res.body.id;
     return beam.request('get', '/channels/' + channel);
